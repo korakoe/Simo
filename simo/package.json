@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build && node .output/server/index.mjs",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@nuxtjs/color-mode": "^3.1.5",
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "defu": "^6.1.0"
+  }
+}

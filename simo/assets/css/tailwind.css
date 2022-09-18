@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .navbar {
+        border-radius: 1rem;
+        position: fixed;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        height: 4rem;
+    }
+}
