@@ -4,12 +4,36 @@
 
 
 @layer components {
-    .navbar {
+    .navbar-mobile {
         border-radius: 1rem;
         position: fixed;
-        bottom: 0.5rem;
-        left: 0.5rem;
-        right: 0.5rem;
+        bottom: 1rem;
+        left: 3rem;
+        right: 3rem;
         height: 4rem;
+    }
+
+    .navbar-desktop {
+        border-radius: 0rem;
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        height: 3rem;
+    }
+
+    .nav-icon-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .nav-icon-dark {
+        filter: invert(29%) sepia(6%) saturate(227%) hue-rotate(202deg) brightness(93%) contrast(90%);
+    }
+
+    .nav-icon-light {
+        filter: invert(57%) sepia(22%) saturate(6368%) hue-rotate(222deg) brightness(96%) contrast(96%);
     }
 }

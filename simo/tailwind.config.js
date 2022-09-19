@@ -6,7 +6,7 @@ module.exports = {
     },
     theme: {
         colors: {
-          'main-1': {
+          'main1': {
             light: '#DBD8F0',
             dark: '#211A1D',
           },
@@ -20,11 +20,15 @@ module.exports = {
           },
           'compliment': {
             light: '#6320EE',
-            dark: '#EE20AA',
+            dark: '#210455',
           },
           'compliment-click': {
             light: '#5336f7',
             dark: '#fc3291',
+          },
+          'compliment-2': {
+            light: '#209fee',
+            dark: '#0c033b',
           },
         },
       }
