@@ -19,21 +19,35 @@
         top: 0rem;
         left: 0rem;
         right: 0rem;
-        height: 3rem;
+        height: 100%;
+        width: 3rem;
     }
 
-    .nav-icon-container {
+    .nav-icon-container-mobile {
+        
+    }
+
+    .nav-icon-container-desktop {
         display: flex;
-        justify-content: space-between;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .nav-icon-wrapper {
+        margin:auto;
+        display: inline-block;
+        width:33%;
+        margin-right:-3px;
     }
 
     .nav-icon-dark {
-        filter: invert(29%) sepia(6%) saturate(227%) hue-rotate(202deg) brightness(93%) contrast(90%);
+        filter: invert(17%) sepia(81%) saturate(7453%) hue-rotate(329deg) brightness(98%) contrast(102%);
+        margin: 0 auto;
+        display:block;
     }
 
     .nav-icon-light {
         filter: invert(57%) sepia(22%) saturate(6368%) hue-rotate(222deg) brightness(96%) contrast(96%);
+        margin: 0 auto;
+        display:block;
     }
 }

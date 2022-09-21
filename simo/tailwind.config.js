@@ -19,16 +19,16 @@ module.exports = {
             dark: '#0E0B0F',
           },
           'compliment': {
-            light: '#6320EE',
-            dark: '#210455',
+            light: '#cdcae3',
+            dark: '#100f14',
           },
           'compliment-click': {
             light: '#5336f7',
             dark: '#fc3291',
           },
           'compliment-2': {
-            light: '#209fee',
-            dark: '#0c033b',
+            light: '#c2bbed',
+            dark: '#06050d',
           },
         },
       }
