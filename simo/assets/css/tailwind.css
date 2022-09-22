@@ -13,11 +13,48 @@
 
 
 @layer components {
-    .simo {
+    .simo-mobile {
         border-radius: 1rem;
-        margin: 0.5rem;
         margin-bottom: 3rem;
-        
+        padding: 0.5rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .simo-lg {
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width: 30%;
+        padding: 0.5rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .simo-md {
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width: 60%;
+        padding: 0.5rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .simo-xl {
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width: 25%;
+        padding: 0.5rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .simo-2xl {
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        width: 20%;
+        padding: 0.5rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
     }
 
     .simo-author-dark {
@@ -112,6 +149,11 @@
         background: linear-gradient(180deg, rgba(0,0,0,0.5133403703278187) 0%, rgba(255,255,255,0) 70%);
         pointer-events:none; 
         z-index: 100;
+        font-family: Reem;
+        text-align: center;
+        color: #ff005d;
+        padding-top: 1rem;
+        font-size: 1.5rem;
     }
 
     .top-fade-light {
@@ -123,5 +165,10 @@
         background: linear-gradient(180deg, rgba(255,255,255,0.5133403703278187) 0%, rgba(255,255,255,0) 70%);
         pointer-events:none; 
         z-index: 100;
+        font-family: Reem;
+        text-align: center;
+        color: #0091ff;
+        padding-top: 1rem;
+        font-size: 1.5rem;
     }
 }

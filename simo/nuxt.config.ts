@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     },
     pwa: {
       manifest: {
-        name: 'Simo',
+        name: 'Simo.',
         lang: 'en',
         useWebmanifestExtension: false,
         start_url: "/app",
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       },
       meta: {
         mobileAppIOS: true,
-        name: "Simo",
+        name: "Simo.",
         author: "Simo"
 
       },

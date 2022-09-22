@@ -9,6 +9,6 @@ import Simos from "./components/layout/list.vue"
         <Navbar>
             Hello World
         </Navbar>
-        <div class="top-fade-light dark:top-fade-dark"></div>
+        <div class="top-fade-light dark:top-fade-dark">Simo.</div>
     </body>
 </template>
