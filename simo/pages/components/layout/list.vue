@@ -31,7 +31,7 @@
 
             const handleScroll = (e) => {
                 let element = scrollComponent.value
-                if (element.getBoundingClientRect().bottom < window.innerHeight + 30) {
+                if (element.getBoundingClientRect().bottom < window.innerHeight + 100) {
                     loadMoreSimos()
                 }
             }
