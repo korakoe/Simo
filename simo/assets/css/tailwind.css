@@ -1,10 +1,74 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Reem';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/public/fonts/ReemKufiInk-Regular.ttf') format('truetype');
+  }
+
 
 @layer components {
-    .navbar-mobile {
+    .simo {
+        border-radius: 1rem;
+        margin: 0.5rem;
+        margin-bottom: 3rem;
+        
+    }
+
+    .simo-author-dark {
+        color: #ff005d;
+        margin-left: 0.3rem;
+        font-family: Reem;
+    }
+
+    .simo-task-dark {
+        color: white;
+        margin-left: 0.3rem;
+        font-family: Reem;
+    }
+
+    .simo-author-light {
+        color: #0091ff;
+        margin-left: 0.3rem;
+        font-family: Reem;
+    }
+
+    .simo-task-light {
+        color: rgb(0, 0, 0);
+        margin-left: 0.3rem;
+        font-family: Reem;
+    }
+
+    .simo-image {
+        border-radius: 1rem;
+        flex-shrink:0;
+        -webkit-flex-shrink: 0;
+        max-width:100%;
+        max-height:100%;
+    }
+
+    .simo-image-container {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden
+    }
+
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .navbar {
         border-radius: 1rem;
         position: fixed;
         bottom: 1rem;
@@ -13,24 +77,11 @@
         height: 4rem;
     }
 
-    .navbar-desktop {
-        border-radius: 0rem;
-        position: fixed;
-        top: 0rem;
-        left: 0rem;
-        right: 0rem;
-        height: 100%;
-        width: 3rem;
-    }
 
-    .nav-icon-container-mobile {
-        padding-top: 1rem;
+    .nav-icon-container {
+        padding-top: 1.2rem;
+        width: 100%;
 
-    }
-
-    .nav-icon-container-desktop {
-        display: flex;
-        padding-top: 0.5rem;
     }
 
     .nav-icon-wrapper {
@@ -47,8 +98,30 @@
     }
 
     .nav-icon-light {
-        filter: invert(57%) sepia(22%) saturate(6368%) hue-rotate(222deg) brightness(96%) contrast(96%);
+        filter: invert(60%) sepia(89%) saturate(1349%) hue-rotate(176deg) brightness(99%) contrast(104%);
         margin: 0 auto;
         display:block;
+    }
+
+    .top-fade-dark {
+        position: fixed;
+        height: 6rem;
+        width: 100%;
+        top: 0rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0.5133403703278187) 0%, rgba(255,255,255,0) 70%);
+        pointer-events:none; 
+        z-index: 100;
+    }
+
+    .top-fade-light {
+        position: fixed;
+        height: 6rem;
+        width: 100%;
+        top: 0rem;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(255,255,255,0.5133403703278187) 0%, rgba(255,255,255,0) 70%);
+        pointer-events:none; 
+        z-index: 100;
     }
 }

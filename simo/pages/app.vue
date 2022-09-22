@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Navbar from "./components/layout/navbar.vue";
-import Simos from "./components/list.vue"
+import Simos from "./components/layout/list.vue"
 </script>
 
 <template>
@@ -9,5 +9,6 @@ import Simos from "./components/list.vue"
         <Navbar>
             Hello World
         </Navbar>
+        <div class="top-fade-light dark:top-fade-dark"></div>
     </body>
 </template>

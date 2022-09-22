@@ -2,8 +2,9 @@ module.exports = {
     darkMode: "class",
     content: [],
     theme : {
-        plugins: []
+        plugins: [],
     },
+
     theme: {
         colors: {
           'main1': {
@@ -19,7 +20,7 @@ module.exports = {
             dark: '#0E0B0F',
           },
           'compliment': {
-            light: '#cdcae3',
+            light: '#CEF8FF',
             dark: '#100f14',
           },
           'compliment-click': {
@@ -27,9 +28,9 @@ module.exports = {
             dark: '#fc3291',
           },
           'compliment-2': {
-            light: '#c2bbed',
+            light: '#EBF5FF',
             dark: '#06050d',
           },
         },
-      }
+      },
 }
