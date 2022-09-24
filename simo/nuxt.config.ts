@@ -33,6 +33,10 @@ export default defineNuxtConfig({
       
 
     },
+
+    serverMiddleware: {
+    '/api': '~/api'
+  },
     // oneSignal: {
     //   init: {
     //     appId: 'YOUR_APP_ID',

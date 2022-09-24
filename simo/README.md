@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Simo-Frontend
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+
+## Made with nuxt!
+chem them out at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
 
@@ -15,14 +17,6 @@ npm install
 
 # pnpm
 pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
 ```
 
 ## Production

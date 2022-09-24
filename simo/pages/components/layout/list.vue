@@ -20,8 +20,8 @@
             const simos = ref(getSimos(10))
             const scrollComponent = ref(null)
 
-            const loadMoreSimos = () => {
-                let newSimos = getSimos(10)
+            const loadMoreSimos = (id) => {
+                let newSimos = getSimos(10, id)
                 simos.value.push(...newSimos)
             }
 
@@ -31,8 +31,9 @@
 
             const handleScroll = (e) => {
                 let element = scrollComponent.value
+                let simoID = simos._rawValue[simos._rawValue.length - 1].id
                 if (element.getBoundingClientRect().bottom < window.innerHeight + 100) {
-                    loadMoreSimos()
+                    loadMoreSimos(simoID)
                 }
             }
 
