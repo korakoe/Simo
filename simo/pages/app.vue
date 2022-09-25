@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import Navbar from "./components/layout/navbar.vue";
 import Simos from "./components/layout/list.vue"
+import { Head } from "nuxt/dist/head/runtime/components";
+</script>
+
+<script lang="ts">
+    export default {
+    head () {
+        return {
+            meta: [
+                {property:"og:type", content:"website"},
+                {property:"og:title", content:"Simo."},
+                {property:"og:description", content:"Simo. The simon says Social Media!"}
+
+            ]
+        }
+    }
+}
 </script>
 
 <template>
