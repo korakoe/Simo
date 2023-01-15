@@ -2,6 +2,7 @@
     "short_name": "Simo.",
     "name": "Simo.",
     "start_url": "/app",
+    "id": "/app",
     "icons": [
       {
         "src": "512x512.png",
