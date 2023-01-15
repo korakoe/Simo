@@ -1,0 +1,32 @@
+.wrap-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+body {
+    background-color: #000000;
+}
+
+.small {
+    font-size: 0.5rem;
+}
+
+.wifi {
+    filter: invert(17%) sepia(81%) saturate(7453%) hue-rotate(329deg) brightness(98%) contrast(102%);
+}
+
+.offline-text {
+    color: #FF008A;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}

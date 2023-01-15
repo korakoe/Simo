@@ -1,0 +1,28 @@
+{
+    "short_name": "Simo.",
+    "name": "Simo.",
+    "start_url": "/app",
+    "icons": [
+      {
+        "src": "512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#FF008A",
+    "description": "The simon says social media."
+}
