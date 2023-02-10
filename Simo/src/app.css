@@ -27,6 +27,35 @@
         font-weight: bold;
     }
 
+    .Large-Red-Centered {
+        font-size: clamp(20px, 10vw, 60px);
+        color: #FF008A;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .login-card {
+        margin:auto;
+        height: clamp(300px, 75vh, 700px);
+        width: clamp(20px, 75vw, 600px);
+        position:fixed;
+        background-color: #d9e8ff;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        border-radius: 2rem;
+        transition: 0.3s;
+        box-shadow:
+            0px 0px 0px 0px #FF008A,
+            0px 0px 0px 0px #FF008A;
+    }
+
+    .login-card-dark {
+        background-color:#09080c;
+    }
+
     .LandingWhite {
         color: rgb(0, 0, 0);
         font-family: 'Reem Kufi Ink', sans-serif;

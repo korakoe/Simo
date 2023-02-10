@@ -20,7 +20,20 @@
         "type": "image/png",
         "sizes": "192x192"
       }
+      
     ],
+
+    "protocol_handlers": [
+      {
+        "protocol": "web+simo",
+        "url": "/friend?code=%s"
+      },
+      {
+        "protocol": "web+simo",
+        "url": "/post?postid=%s"
+      }
+    ],
+
     "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
