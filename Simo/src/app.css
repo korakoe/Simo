@@ -35,25 +35,160 @@
         text-align: center;
     }
 
+    .Medium-Blue-Centered {
+        font-size: clamp(10px, 5vw, 30px);
+        color: #20A4F3;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .Small-Blue {
+        font-size: clamp(5px, 5vw, 20px);
+        color: #20A4F3;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+    }
+
+    .Login-form-card {
+        margin:auto;
+        padding-left: clamp(0.25rem, 10vw, 5rem);
+        padding-right: clamp(0.25rem, 10vw, 5rem);
+        padding-top: clamp(0.5rem, 10vh, 2rem);
+        height: clamp(0px, 45vh, 370px);
+    }
+
+    .Red-line {
+        margin-top: 1rem;
+        height:0.25rem;
+        border-width:0;
+        color: #FF008A;
+        background-color:#FF008A;
+    }
+
+    .form-field {
+        margin-bottom: clamp(0rem, 1vh, 4rem);
+        width: 100%;
+        background-color: #00000000;
+        border: 3px solid #FF008A;
+        border-radius: 2rem;
+        color: #000000;
+        padding: 3px 25px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.3s
+    }
+
+    .form-submit {
+        background-color: #FF008A;
+        margin-bottom: clamp(0rem, 1vh, 4rem);
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        border-width: 0.25rem;
+        border-color: #00000000;
+        border-radius: 2rem;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.3s;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form-signup {
+        position: relative;
+        margin-bottom: clamp(0rem, 1vh, 4rem);
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        background-color: #00000000;
+        border-width: 0.25rem;
+        border-color: #FF008A;
+        border-radius: 2rem;
+        color: #000000;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.3s;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dark .form-signup {
+        color: #ffffff;
+    }
+
+    .form-signup:hover {
+        -webkit-box-shadow:0px 0px 10px 4px rgba(255,0,136,1);
+        background-color: #00000000;
+        border-color: #FF008A;
+        border-width: 0.25rem;
+        -moz-box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
+        box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
+        color: #FF008A;
+    }
+
+    .form-submit:hover {
+        -webkit-box-shadow:0px 0px 10px 4px rgba(255,0,136,1);
+        background-color: #00000000;
+        border-color: #FF008A;
+        border-width: 0.25rem;
+        -moz-box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
+        box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
+        color: #FF008A;
+    }
+
+    .dark .form-field {
+        color: #ffffff;
+    }
+
+    .Small-Text {
+        font-size: clamp(5px, 5vw, 20px);
+        color: #000000;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+    }
+
+    .Dark-Small-Text {
+        font-size: clamp(5px, 5vw, 20px);
+        color: #ffffff;
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-weight: bold;
+    }
+
+    .button-holder {
+        position: absolute;
+        bottom: clamp(0rem, 1vh, 2rem);;
+        left: clamp(1rem, 1vw, 4rem);
+        right: clamp(1rem, 1vw, 4rem);
+    }
+
     .login-card {
         margin:auto;
-        height: clamp(300px, 75vh, 700px);
+        height: clamp(300px, 80vh, 600px);
         width: clamp(20px, 75vw, 600px);
         position:fixed;
-        background-color: #d9e8ff;
         top:0;
         bottom:0;
         left:0;
         right:0;
         border-radius: 2rem;
+        border-color: #FF008A;
+        border-width: 0.25rem;
         transition: 0.3s;
         box-shadow:
-            0px 0px 0px 0px #FF008A,
-            0px 0px 0px 0px #FF008A;
-    }
-
-    .login-card-dark {
-        background-color:#09080c;
+            0px 0px 0px 0px #20A4F3;
     }
 
     .LandingWhite {
@@ -170,18 +305,9 @@
     }
 
     .learn-more:hover {
-        -webkit-box-shadow:0px 0px 28px 0px rgba(255,0,136,1);
-        -moz-box-shadow: 0px 0px 28px 0px rgba(255,0,136,1);
-        box-shadow: 0px 0px 28px 0px rgba(255,0,136,1);
-        color: #FF008A;
-        transform: scale(1.1);
-        transition: 0.3s
-    }
-
-    .learn-more-dark:hover {
-        -webkit-box-shadow:0px 0px 28px 0px rgba(255,0,136,1);
-        -moz-box-shadow: 0px 0px 28px 0px rgba(255,0,136,1);
-        box-shadow: 0px 0px 28px 0px rgba(255,0,136,1);
+        -webkit-box-shadow:0px 0px 10px 4px rgba(255,0,136,1);
+        -moz-box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
+        box-shadow: 0px 0px 10px 4px rgba(255,0,136,1);
         color: #FF008A;
         transform: scale(1.1);
         transition: 0.3s
