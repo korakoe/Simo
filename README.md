@@ -1,2 +1,2 @@
 # Simo.
- The BeReal Like Social Media With Simon Says like Qualities!
+ The Social Media With Simon Says like Qualities!
