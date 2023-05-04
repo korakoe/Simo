@@ -37,6 +37,6 @@
     "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#FF008A",
+    "theme_color": "#000000",
     "description": "The simon says social media."
 }
