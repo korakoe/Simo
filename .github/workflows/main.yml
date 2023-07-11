@@ -1,0 +1,4 @@
+- name: Count Lines of Code (cloc)
+  # You may pin to the exact commit or the version.
+  # uses: djdefi/cloc-action@6b0244f60427a34a43794f3723267f8add465b04
+  uses: djdefi/cloc-action@5
