@@ -1,2 +1,2 @@
-- name: CLOC
-  uses: djdefi/cloc-action@5
+name: CLOC
+uses: djdefi/cloc-action@5
