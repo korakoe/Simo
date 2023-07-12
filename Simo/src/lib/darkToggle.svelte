@@ -32,9 +32,9 @@
     }
 </script>
 
-    <button on:click={handleSwitchDarkMode} class="align-images">
-        <img src ="/dark.svg" alt="Dark Mode" class="dark-symbol img1"/>
-        <img src ="/light.svg" alt="Light Mode" class="light-symbol img2"/>
+    <button on:click={handleSwitchDarkMode} class="align-images no-select">
+        <img src ="/dark.svg" alt="Dark Mode" class="dark-symbol img1 no-select"/>
+        <img src ="/light.svg" alt="Light Mode" class="light-symbol img2 no-select"/>
     </button>
 
     <style>
