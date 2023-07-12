@@ -2,8 +2,10 @@
     import { fly } from 'svelte/transition'
   
     export let data
-  </script>
+</script>
   
+<DarkToggle />
+
   {#key data.url}
     <div class="transition_container"
       in:fly={{ x: 200, duration: 300, delay: 500 }}
