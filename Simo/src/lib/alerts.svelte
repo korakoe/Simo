@@ -26,14 +26,14 @@
 
 {#if visible}
     {#if type=="error"}
-        <div class="error-alert" out:fly={{y: 100, delay: 300, easing: backOut}}>
+        <div class="error-alert no-select" out:fly={{y: 100, delay: 300, easing: backOut}}>
             {message}
             <span class="closebtn no-select" on:click={() => hide_alert()}>&times;</span>
         </div>
     {/if}
 
     {#if type=="info"}
-        <div class="info-alert" out:fly={{y: 100, delay: 300, easing: backOut}}>
+        <div class="info-alert no-select" out:fly={{y: 100, delay: 300, easing: backOut}}>
             {message}
             <span class="closebtn no-select" on:click={() => hide_alert()}>&times;</span>
         </div>
