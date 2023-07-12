@@ -105,6 +105,7 @@
 
     .form-signup {
         position: relative;
+        margin-top: 2rem;
         margin-bottom: clamp(0rem, 1vh, 4rem);
         padding-left: 0.25rem;
         padding-right: 0.25rem;

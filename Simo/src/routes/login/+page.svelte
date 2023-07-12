@@ -24,7 +24,7 @@
         <h2 class="Small-Text dark:Dark-Small-Text"> Password</h2>
         <input type="password" class="form-field" name=password>
         <div class="button-holder">
-            <input type="submit" value="Log-In" class="form-submit">
+            <input type="submit" value="Continue" class="form-submit">
             <a class="form-signup" href="/register">Register</a>
         </div>
     </div>

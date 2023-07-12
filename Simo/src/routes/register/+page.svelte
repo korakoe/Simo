@@ -30,7 +30,7 @@
             <h2 class="Small-Text dark:Dark-Small-Text"> Confirm Password</h2>
             <input type="password" name="passwordConfirm" class="form-field">
             <div class="button-holder">
-                <input type="submit" value="Register" class="form-submit" formnovalidate>
+                <input type="submit" value="Continue" class="form-submit" formnovalidate>
                 <a class="form-signup" href="/login">Log-in</a>
             </div>
             
