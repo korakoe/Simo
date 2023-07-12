@@ -1,6 +1,6 @@
 import { redirect, type Actions } from "@sveltejs/kit";
 
-let redirect = false
+let doRedirect = false
 
 export const actions: Actions = {
     default: async ({ locals, request }) => {
@@ -66,7 +66,7 @@ export const actions: Actions = {
         try {
             await locals.pb.collection("users").create(data);
             await locals.pb.collection("users").authWithPassword(data.email, data.password);
-            let redirect = True
+            let doRedirect = True
         } 
         catch (e) {
             if (e.response.message == "Failed to create record.") {
@@ -81,7 +81,7 @@ export const actions: Actions = {
             }
         }
 
-        if (redirect) {
+        if (doRedirect) {
             throw redirect(303, "/app");
         }
 
