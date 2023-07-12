@@ -28,14 +28,14 @@
     {#if type=="error"}
         <div class="error-alert" out:fly={{y: 100, delay: 300, easing: backOut}}>
             {message}
-            <span class="closebtn" on:click={() => hide_alert()}>&times;</span>
+            <span class="closebtn no-select" on:click={() => hide_alert()}>&times;</span>
         </div>
     {/if}
 
     {#if type=="info"}
         <div class="info-alert" out:fly={{y: 100, delay: 300, easing: backOut}}>
             {message}
-            <span class="closebtn" on:click={() => hide_alert()}>&times;</span>
+            <span class="closebtn no-select" on:click={() => hide_alert()}>&times;</span>
         </div>
     {/if}
 {/if}
