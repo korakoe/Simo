@@ -1,5 +1,4 @@
 <script>
-    import DarkToggle from "$lib/darkToggle.svelte";
     import { applyAction, enhance } from "$app/forms";
     import { pb } from "$lib/pocketbase";
     import Alerts from "$lib/alerts.svelte";
