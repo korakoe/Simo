@@ -17,7 +17,7 @@ export const actions: Actions = {
 
             if (e.response.message == "Failed to authenticate.") {
                 return {
-                    userNotExists: true
+                    error_message: "Username or password is incorrect"
                 }
             }
         }

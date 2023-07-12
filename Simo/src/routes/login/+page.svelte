@@ -1,8 +1,9 @@
 <script>
     import DarkToggle from "$lib/darkToggle.svelte";
+    import Alerts from "$lib/alerts.svelte";
     import { applyAction, enhance } from "$app/forms";
     import { pb } from "$lib/pocketbase";
-    
+
     export let form
 </script>
 
@@ -29,9 +30,6 @@
     </div>
 </form>
 
-{#if form?.userNotExists}
-    <div class="error-alert">
-        Username or password is incorrect...
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    </div>
+{#if form?.error_message}
+    <Alerts message={form?.error_message} type="error" />
 {/if}

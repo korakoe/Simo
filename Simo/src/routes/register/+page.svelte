@@ -2,6 +2,9 @@
     import DarkToggle from "$lib/darkToggle.svelte";
     import { applyAction, enhance } from "$app/forms";
     import { pb } from "$lib/pocketbase";
+    import Alerts from "$lib/alerts.svelte";
+
+    export let form
 
 </script>
 
@@ -27,9 +30,13 @@
             <h2 class="Small-Text dark:Dark-Small-Text"> Confirm Password</h2>
             <input type="password" name="passwordConfirm" class="form-field">
             <div class="button-holder">
-                <input type="submit" value="Register" class="form-submit">
+                <input type="submit" value="Register" class="form-submit" formnovalidate>
                 <a class="form-signup" href="/login">Log-in</a>
             </div>
             
         </div>
 </form>
+
+{#if form?.error_message}
+    <Alerts message={form?.error_message} type="error" />
+{/if}
