@@ -1,5 +1,7 @@
 <script>
     import { fly } from 'svelte/transition'
+
+    import DarkToggle from "$lib/darkToggle.svelte";
   
     export let data
 </script>
