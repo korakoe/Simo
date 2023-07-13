@@ -3,6 +3,7 @@
 
 </script>
 <DarkToggle />
+<img src="/favicon.ico" alt="Simo." width="25" />
 <div id="nav">
     <ul>
         <li><h1 class=LandingTitle>Simo.</h1></li>
