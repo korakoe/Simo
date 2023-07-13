@@ -7,7 +7,6 @@
 
 </script>
 
-
 <form method="post" class="login-card dark:dark-login-card" use:enhance={() => {
     return async ({ result }) => {
         pb.authStore.loadFromCookie(document.cookie);

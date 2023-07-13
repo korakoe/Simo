@@ -1,4 +1,5 @@
 import { redirect, type Actions } from "@sveltejs/kit";
+import * as fs from 'fs';
 
 let doRedirect = false
 
@@ -6,6 +7,7 @@ export const actions: Actions = {
     default: async ({ locals, request }) => {
         const data = Object.fromEntries(await request.formData()) as {
             username: string;
+            name: string;
             email: string;
             password: string;
             passwordConfirm: string;
@@ -24,6 +26,7 @@ export const actions: Actions = {
         /*Minimum eight characters, at least one uppercase letter, one lowercase letter and one number*/
 
         data.type = "User"
+        data.name = data.username
 
         if (data.email == "" || data.username == "") {
             return {
@@ -66,7 +69,7 @@ export const actions: Actions = {
         try {
             await locals.pb.collection("users").create(data);
             await locals.pb.collection("users").authWithPassword(data.email, data.password);
-            let doRedirect = True
+            let doRedirect = true
         } 
         catch (e) {
             if (e.response.message == "Failed to create record.") {

@@ -1,37 +1,35 @@
 <script>
-    import { currentUser, pb } from "$lib/pocketbase";
+    import { currentUser, pb} from "$lib/pocketbase";
     import { redirect } from "@sveltejs/kit";
     import { browser } from '$app/environment';
-    
-    var username = ""
-    var nickname = ""
-    var email = ""
-    var type = ""
+    import { PUBLIC_PB_ADDR } from "$env/static/public";
+    import AvatarContainer from "$lib/avatarContainer.svelte";
+
 
     if (currentUser) {
-        currentUser.subscribe((value) => {
-            username = value?.username;
-            nickname = value?.name;
-            email = value?.email;
-            type = value?.type
-        })
-        console.log(`Logged in as ${username} || ${nickname} || ${email} || Perm level: ${type}`)
-        if (username == undefined) {
-            console.log("Redirecting to login...")
-            if (browser) { // to prevent error window is not defined, because it's SSR
-                window.location.href = '/login';
+        currentUser.subscribe(function (user) {
+            if (user?.username == undefined) {
+                if (browser) { // to prevent error window is not defined, because it's SSR
+                    console.log("User was not logged in... redirecting")
+                    window.location.href = '/login';
+                }
             }
-        }
-    }
-    else {
-        if (browser) { // to prevent error window is not defined, because it's SSR
-                window.location.href = '/login';
-            }
-    }
 
+        })
+    }
 </script>
 
 
 {#if $currentUser}
-    <h1 class="LandingTitle">Hello {$currentUser.username}</h1>
+    <h1 class="LandingTitle">Hello {$currentUser.name}</h1>
+    {#key $currentUser.avatar}
+        <AvatarContainer 
+        containerWidth="5rem" 
+        containerHeight="5rem" 
+        userId={$currentUser.id} 
+        username={$currentUser.username} 
+        avatarFile={$currentUser.avatar} 
+        styleClass=""
+        style="border: 0.25rem solid #ffffff"/>
+    {/key}
 {/if}
