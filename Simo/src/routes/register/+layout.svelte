@@ -10,7 +10,7 @@
 
 {#key data.url}
 <div class="transition_container"
-    in:fly={{ y: 200, duration: 300, delay: 500 }}
+    in:fly={{ y: 200, duration: 300, delay: 300 }}
     out:fly={{ y: 200, duration: 300 }}>
     <slot />
 </div>
